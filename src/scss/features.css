@@ -1,0 +1,123 @@
+.feature {
+  margin-bottom: 80px;
+  scroll-margin-top: 100px;
+  @media screen and (min-width: 1440px) {
+    margin-bottom: 150px;
+  }
+}
+
+.swiper-feature {
+  display: flex;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  @media screen and (min-width: 1440px) {
+    overflow: visible !important;
+  }
+}
+
+.feature_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
+  @media screen and (min-width: 1440px) {
+    padding: 0 80px;
+  }
+}
+
+.swiper-slide-feature {
+  width: 305px;
+  border-radius: 16px;
+  display: flex;
+}
+
+.swiper-slide-feature > img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  display: none;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  cursor: pointer;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  width: 36px !important;
+  height: 36px;
+  top: auto !important;
+  bottom: -60px !important;
+  display: none !important;
+}
+
+.swiper-button-prev {
+  @media screen and (min-width: 1440px) {
+    left: 590px !important;
+  }
+}
+
+.swiper-button-next {
+  @media screen and (min-width: 1440px) {
+    left: 650px !important;
+  }
+}
+
+.swiper-button-prev > img,
+.swiper-button-next > img {
+  width: 36px !important;
+  height: 36px;
+}
+
+@media screen and (min-width: 1440px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    pointer-events: auto;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: flex !important;
+  }
+}
+.features_article {
+  padding: 22px;
+  background: var(--card-color);
+  border-radius: 20px;
+  width: 305px;
+  height: 349px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+}
+.features_article > img {
+  width: 157px;
+  height: 157px;
+}
+.features_article_title {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+  color: var(--title-color);
+  /* width: 230px; */
+}
+.features_article_text {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  color: var(--text-color);
+}
